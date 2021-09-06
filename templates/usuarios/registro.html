@@ -1,0 +1,36 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es-AR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- TITULO DE LA PÁGINA -->
+    <title>PregunChaco Registro</title>
+
+    <!-- CSS PRESONALIZADOS -->
+    <link rel="stylesheet" href="{% static 'css/cssRegistro.css' %}" />
+</head>
+
+<body>
+    <div class="login-container">
+        <img class="image-container" src="{% static 'imagenes/Logo_PregunChaco_729_376.png' %}" alt="login" />
+        <div class="login-info-container">
+            <br/>
+            <h1 class="title">REGISTRATE AHORA:</h1>
+            <form action="" method="post" class="inputs-container">
+                {% csrf_token %} {{ form.as_p }}
+                <button type="submit" id="submit" class="btn">Ingresar</button>
+                <p>
+                    ¿Ya tenés cuenta?:
+                    <a class="span " href="{% url 'usuarios:login' %}">Ingresá acá</a>
+                </p>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

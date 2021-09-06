@@ -1,0 +1,99 @@
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+body {
+    font-family: 'Kanit', sans-serif;
+}
+
+*:hover {
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+section {
+    float: left;
+    width: 100%;
+    background: #fff;
+    /* fallback for old browsers */
+    padding: 30px 0;
+}
+
+h1 {
+    float: left;
+    width: 100%;
+    color: #232323;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+h1 span {
+    font-family: 'Kanit', sans-serif;
+    display: block;
+    font-size: 45px;
+    text-transform: none;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    font-weight: 700
+}
+
+h1 a {
+    color: #131313;
+    font-weight: bold;
+}
+
+.profile-card-5 {
+    margin-top: 20px;
+}
+
+.profile-card-5 .btn {
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 7px 20px;
+}
+
+.profile-card-5 .card-img-block {
+    width: 50%;
+    margin: 0 auto;
+    position: relative;
+    top: -20px;
+}
+
+.profile-card-5 .card-img-block img {
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.63);
+}
+
+.profile-card-5 h5 {
+    color: #4E5E30;
+    font-weight: 600;
+}
+
+.profile-card-5 p {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.profile-card-5 .btn-primary {
+    background-color: #4E5E30;
+    border-color: #4E5E30;
+}
+@keyframes colorjugar {
+    from {color:#ffffff; background-color:rgb(78, 189, 78);}
+    to {color:rgb(6, 59, 5);background-color:rgb(188, 248, 170);}
+}
+.jugar {
+    position:absolute;
+    background:rgb(78, 189, 78);
+    padding: 6px;
+    border-radius: 8px;
+    left:41%;
+    color:rgb(43, 43, 43);
+    transition: all 0.2s ease-in-out;
+}
+#botonJugar:hover .jugar {
+    transform: scale3d(1.2,1.2,1.2);
+    animation-name: colorjugar;
+    animation-timing-function: ease;
+    animation-duration: 0.2s;
+    animation-fill-mode: both;
+}
